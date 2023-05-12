@@ -5,7 +5,7 @@ if [ $# -ne 1 ]; then
     echo "Usage: $0 <port>"
     exit 1
 fi
-
+# #
 # Create a named pipe for the server to read from
 PIPE=$(mktemp -u)
 mkfifo "$PIPE"
